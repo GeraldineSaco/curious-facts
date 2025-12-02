@@ -14,4 +14,3 @@ const dataFacts = async () => {
 
 dataFacts();
 
-// response.text(es el título de la noticia)
