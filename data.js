@@ -1,16 +1,12 @@
-const dataFacts = async () => {
-    let facts = `https://uselessfacts.jsph.pl`;
-    let request = `${facts}/api/v2/facts/random`;
-    
-    let data = await fetch(request);
-    console.log(data);
-    let response = await data.json();
+const factRandom = "random";
+const factToday = "today";
 
-    console.log(facts);
-    console.log(response);
-    //console.log(response.text);
-    //console.log(response.permalink);
+const dataFacts = async (fact) => {
+    let apiFacts = `https://uselessfacts.jsph.pl/api/v2/facts/${fact}`;
+    fetch(apiFacts)
+    .then((response) => response.json())
+    .then((data) => console.log(data))
 }
 
-dataFacts();
+dataFacts(factToday);
 
