@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curious Facts App</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="cdnjs.cloudflare.com">
 </head>
 
 <body>
@@ -24,23 +23,51 @@
         <section class="facts">
             <div class="container-facts">
                 <div class="container-text">
-
+                    <h2>El Hecho curioso de hoy, es:</h2>
+                    <p>Aquí se mostrará el Hecho curioso</p>
                 </div>
                 <div class="controls-buttons">
-                    <button type="button" class="btn-ctrls">
-                        <i class="fa-light fa-calendar-day">Today</i>
-                    
+                    <button type="button" class="btn-ctrls" title="Te muestro el hecho curioso de hoy">
+                        <img src="/icons/hoy-dia.png" alt="Icono de calendario">
                     </button>
-                    <button type="button" class="btn-ctrls"><i></i></button>
-                    <button type="button" class="btn-ctrls"><i></i></button>
+                    <button type="button" class="btn-ctrls" title="¿Te gustó lo que leíste? click al corazón">
+                        <img src="/icons/favorito.png" alt="Icono de favorito en forma corazón">
+                    </button>
+                    <button type="button" class="btn-ctrls" title="Te muestro un hecho curioso random">
+                        <img src="/icons/cambio.png" alt="Icono de cambio aleatorio">
+                    </button>
                 </div>
             </div>
         </section>
 
         
 
-        <section class="container-favorite-facts">
+        <section class="favorites">
+            <div class="container-favorites">
+                <div class="container-title">
+                    <h2>Hechos curiosos favoritos</h2>
+                    <button type="button" class="btn-ctrls btn-start" title="Inicio">
+                        <img src="/icons/casa.png" alt="Icono de casa">
+                    </button>
+                </div>
+                <div class="container-items-favorites">
+                    <div class="items">
+                        Item 1
+                    </div>
 
+                    <div class="items">
+                        Item 2
+                    </div>
+
+                    <div class="items">
+                        Item 3
+                    </div>
+
+                    <div class="items">
+                        Item 4
+                    </div>
+                </div>
+            </div>
         </section>
 
     </main>
@@ -49,6 +76,8 @@
     </footer>
     <script type="module" src="./javascript/data.js"></script>
     <script type="module" src="./javascript/script.js"></script>
+    
+
 </body>
 
 </html>
