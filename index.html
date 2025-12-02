@@ -6,20 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curious Facts App</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="cdnjs.cloudflare.com">
 </head>
 
 <body>
     <header>
-        <h1>Lista de Curious Facts</h1>
+        <h1>Bienvenidos a Curious Facts</h1>
+        <nav>
+            <div class="container-nav">
+                <button type="button" class="btn-navbar">Ver actual</button>
+                <button type="button" class="btn-navbar">Ver Random</button>
+                <button type="button" class="btn-navbar">Favoritos</button>
+            </div>
+        </nav>
     </header>
     <main>
-        <section class="container-list-facts">
+        <section class="facts">
+            <div class="container-facts">
+                <div class="container-text">
 
+                </div>
+                <div class="controls-buttons">
+                    <button type="button" class="btn-ctrls">
+                        <i class="fa-light fa-calendar-day">Today</i>
+                    
+                    </button>
+                    <button type="button" class="btn-ctrls"><i></i></button>
+                    <button type="button" class="btn-ctrls"><i></i></button>
+                </div>
+            </div>
         </section>
 
-        <section class="container-detail-facts">
-
-        </section>
+        
 
         <section class="container-favorite-facts">
 
@@ -27,7 +45,7 @@
 
     </main>
     <footer>
-        
+        <p class="container-footer">Realizado por Geraldine Saco - Derechos reservados</p>
     </footer>
     <script type="module" src="./javascript/data.js"></script>
     <script type="module" src="./javascript/script.js"></script>
