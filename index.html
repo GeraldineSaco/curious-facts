@@ -27,13 +27,13 @@
                     <p id="displayData">Aquí se mostrará el Hecho curioso</p>
                 </div>
                 <div class="controls-buttons">
-                    <button type="button" class="btn-ctrls" title="Te muestro el hecho curioso de hoy">
+                    <button type="button" class="btn-ctrls" id="ctrlToday" title="Te muestro el hecho curioso de hoy">
                         <img src="/icons/hoy-dia.png" alt="Icono de calendario">
                     </button>
-                    <button type="button" class="btn-ctrls" title="¿Te gustó lo que leíste? click al corazón">
+                    <button type="button" class="btn-ctrls" id="ctrlAddFavorite" title="¿Te gustó lo que leíste? click al corazón">
                         <img src="/icons/favorito.png" alt="Icono de favorito en forma corazón">
                     </button>
-                    <button type="button" class="btn-ctrls" title="Te muestro un hecho curioso random">
+                    <button type="button" class="btn-ctrls" id="ctrlRandom" title="Te muestro un hecho curioso random">
                         <img src="/icons/cambio.png" alt="Icono de cambio aleatorio">
                     </button>
                 </div>
@@ -74,10 +74,10 @@
     <footer>
         <p class="container-footer">Realizado por Geraldine Saco - Derechos reservados</p>
     </footer>
-    <script type="module" src="./javascript/data.js"></script>
-    <script type="module" src="./javascript/script.js"></script>
-    
-
+    <script type="module" src="/javascript/data.js"></script>
+    <script type="module" src="/javascript/script.js"></script>
+    <script type="module" src="/javascript/favorite.js"></script>
+    <script type="module" src="/javascript/controls.js"></script>
 </body>
 
 </html>

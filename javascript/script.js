@@ -38,3 +38,5 @@ const showListFavorites = () => displayFavorites();
 btnToday.addEventListener("click", showFactToday);
 btnRandom.addEventListener("click", showFactRandom);
 btnFavorites.addEventListener("click", showListFavorites);
+
+export {showFactRandom, showFactToday}
