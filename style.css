@@ -16,6 +16,10 @@ main{
     background-color: #D0E066;
 }
 
+.hidden{
+    display: none;
+}
+
 h1{
     background-color: #383535;
     padding: 25px;
