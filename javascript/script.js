@@ -1,4 +1,5 @@
 import {dataFacts} from "./data.js"
+import { renderListFavorites } from "./favorite.js";  
 
 const btnToday = document.getElementById("btNavToday");
 const btnRandom = document.getElementById("btNavRandom");
@@ -15,7 +16,7 @@ function displayInitial(){
 function displayFavorites(){
     factSection.classList.add("hidden");
     favoritesSection.classList.remove("hidden");
-    //Aquí se llamará la función para listar los favoritos;
+    renderListFavorites();
 }
 
 displayInitial();
@@ -33,7 +34,6 @@ const showFactRandom = () => {
 }
 
 const showListFavorites = () => displayFavorites();
-
 
 btnToday.addEventListener("click", showFactToday);
 btnRandom.addEventListener("click", showFactRandom);
