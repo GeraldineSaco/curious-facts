@@ -14,4 +14,30 @@ const addFavorites = () => {
     }
 }
 
-export {addFavorites}
+const renderListFavorites = () => {
+    containerFavorites.innerHTML = "";
+    const favorites = JSON.parse(localStorage.getItem('uselessFactsFavorites')) || [];
+    if (favorites.length === 0) {
+        containerFavorites.innerHTML = '<h3>Aún no tienes favoritos guardados.</h3>';
+        return;
+    }
+    let favoritePrint = "";
+    favorites.forEach(fact => { 
+        favoritePrint += `
+            <div class="items">
+                <ul type="square">
+                    <li>${fact.text}</li>
+                </ul>
+            </div>
+        `
+        containerFavorites.innerHTML = favoritePrint;   
+    });
+}
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    localStorage.removeItem('uselessFactsFavorites');
+    console.log("LocalStorage de favoritos limpiado para esta sesión.");
+});
+
+
+export {addFavorites, renderListFavorites}
