@@ -35,19 +35,19 @@ Este proyecto es un ejercicio práctico para desarrollar la interfaz front-end d
 ## 📁 Estructura del Proyecto
 ```
 newCuriousFacts/
-├── icons/              # Iconos de botones
+├── icons/               → Carpeta de íconos que son botones
 │   ├── cambio.png
 │   ├── casa.png
 │   ├── favorito.png
 │   └── hoy-dia.png
-├── javaScript/          # Carpeta de archivos del código de la aplicación.
-│   ├── controls.js      # Botones de íconos 
-│   ├── data.js          # Consumo de data de la API
-│   ├── favorite.js      # Funciones: Añadir a favoritos y mostrar la lista de los mismos.
-│   └── script.js        # Renderizado mostrar el hecho actual, el random y la lista de Favoritos (botones navbar)
-├── index.html           # Página principal
+├── javaScript/          → Carpeta de archivos del código de la aplicación:
+│   ├── controls.js        → Botones de íconos 
+│   ├── data.js            → Consumo de data de la API
+│   ├── favorite.js        → Funciones: Añadir a favoritos y mostrar la lista de los mismos
+│   └── script.js          → Renderizado mostrar el hecho actual, el random y la lista de Favoritos (botones navbar)
+├── index.html           → Página principal
 ├── README.md
-└── style.css            # Estilos CSS
+└── style.css            → Estilos CSS
 ```
 
 ## 📐 Proceso de Desarrollo
