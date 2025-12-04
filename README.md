@@ -17,11 +17,10 @@ Este proyecto es un ejercicio práctico para desarrollar la interfaz front-end d
 
 *   La aplicación debe llamar y mostrar hechos curiosos de uno en uno.
 *   Debe ser una SPA (un solo archivo `index.html`).
-*   Debe permitir añadir hechos a una lista de favoritos visible en la página.
+*   Debe permitir añadir hechos a una lista de favoritos.
 
-### Extras (Opcional):
+### Extras:
 
-*   Diseño mobile-first y responsive con al menos dos puntos de quiebre.
 *   Tests unitarios implementados con Vitest/Jest.
 
 ## 🛠 Tecnologías y Herramientas
@@ -33,15 +32,41 @@ Este proyecto es un ejercicio práctico para desarrollar la interfaz front-end d
 | Herr. de diseño | Figma aplicando atomic design, CANVA para el USERFLOW |
 | Herr. de control de versiones | Git/GitHub y Gitflow, aplicando conventional commits |
 
-## 📐 Metodología y Proceso de Desarrollo
+## 📁 Estructura del Proyecto
+```
+newCuriousFacts/
+├── icons/              # Iconos de botones
+│   ├── cambio.png
+│   ├── casa.png
+│   ├── favorito.png
+│   └── hoy-dia.png
+├── javaScript/          # Carpeta de archivos del código de la aplicación.
+│   ├── controls.js      # Botones de íconos 
+│   ├── data.js          # Consumo de data de la API
+│   ├── favorite.js      # Funciones: Añadir a favoritos y mostrar la lista de los mismos.
+│   └── script.js        # Renderizado mostrar el hecho actual, el random y la lista de Favoritos (botones navbar)
+├── index.html           # Página principal
+├── README.md
+└── style.css            # Estilos CSS
+```
 
-El proyecto se gestionó siguiendo principios ágiles:
+## 📐 Proceso de Desarrollo
 
-*   **Planificación:** Se usó un tablero Kanban en [Trello](https://trello.com/b/0D09cROk/curios-facts) para definir historias de usuario y tareas.
+*   **Planificación:** Se usó tablero Kanban en [Trello](https://trello.com/b/0D09cROk/curios-facts) para definir historias de usuario y tareas.
 
-*   **Control de Versiones:** Se aplicó la metodología [Gitflow](), trabajando en una rama `dev` principal y ramas de `feature` para cada tarea, con merges eventuales a `main`. Se usaron [Conventional Commits](www.conventionalcommits.org) para mantener un historial de commits limpio y descriptivo.
+*   **Diseño:** Primero realicé el flujo de usuario (userflow) se realizó en [CANVA](https://www.canva.com/design/DAG6RP2_FM0/eGUi2TKWz9c_MgEUQqK63Q/edit?utm_content=DAG6RP2_FM0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) y la maquetación inicial se realizó en [Figma](https://www.figma.com/design/eFeEnUoTrhLpDB1uGbYgS8/CuriousFacts?node-id=1-2&p=f&t=MIH3auy2hFRE59aV-0).
 
-*   **Diseño:** El flujo de usuario (userflow) se realizó en CANVA y la maquetación inicial se realizaron en [Figma](www.figma.com).
+*   **Control de Versiones:** Se aplicó la metodología [Gitflow](), trabajando en una rama `dev` principal y ramas de `feature` para cada tarea, con merges eventuales a `main`.
+
+*   **Convenciones de nomenclatura:** Se usa nombres descriptivos en el idioma Inglés: en clases, id's, variables y funciones. Se detalla a continuación: 
+
+| Tecnología | Convención |
+|------------|------------|
+| HTML y CSS | kebab-case (minúsculas con guión medio) |
+| Javascript | camelCase (la primera palabra en minúsculas y las siguientes con mayúscula inicial) |
+| Git y Github | Conventional Commits y Gitflow para un historial de commits limpio y descriptivo. |
+| VS Code | Estructura de carpetas clasificadas y nombres de archivos en minúsculas, a excepción del README.md |
+
 
 ## 🚀 Despliegue y Uso
 
