@@ -1,0 +1,23 @@
+{
+  "name": "newcuriousfacts",
+  "version": "1.0.0",
+  "description": "Curious Facts App",
+  "homepage": "https://github.com/GeraldineSaco/curious-facts#readme",
+  "bugs": {
+    "url": "https://github.com/GeraldineSaco/curious-facts/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GeraldineSaco/curious-facts.git"
+  },
+  "license": "ISC",
+  "author": "Geraldine Saco",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "vitest": "^4.0.15"
+  }
+}
