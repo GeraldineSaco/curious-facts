@@ -1,10 +1,10 @@
 import {displayedFactData} from "./data.js"
+
 const containerFavorites = document.getElementById("diplayListFavorites");
 
 const addFavorites = () => { 
     const favorites = JSON.parse(localStorage.getItem('uselessFactsFavorites')) || [];
-    const factExists = favorites.some(fact => fact.id === displayedFactData.id);
-    
+    const factExists = favorites.some(fact => fact.id === displayedFactData.id);    
     if (factExists === false){
         favorites.push(displayedFactData);
         localStorage.setItem('uselessFactsFavorites', JSON.stringify(favorites));
@@ -19,7 +19,6 @@ const renderListFavorites = () => {
     const favorites = JSON.parse(localStorage.getItem('uselessFactsFavorites')) || [];
     if (favorites.length === 0) {
         containerFavorites.innerHTML = '<h3>Aún no tienes favoritos guardados.</h3>';
-        return;
     }
     let favoritePrint = "";
     favorites.forEach(fact => { 
@@ -36,8 +35,6 @@ const renderListFavorites = () => {
 
 document.addEventListener('DOMContentLoaded', (event) => {
     localStorage.removeItem('uselessFactsFavorites');
-    console.log("LocalStorage de favoritos limpiado para esta sesión.");
 });
-
 
 export {addFavorites, renderListFavorites}
