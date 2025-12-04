@@ -62,7 +62,7 @@ nav .container-nav{
 }
 
 .container-facts{
-    background-color: antiquewhite;
+    background-color: #fde3e3;
     margin: 40px;
     display: flex;
     justify-content: space-between;
@@ -110,7 +110,7 @@ nav .container-nav{
 }
 
 .container-favorites{
-    background-color: antiquewhite;
+    background-color: #fde3e3;
     margin: 40px;
     display: flex;
     justify-content: space-between;

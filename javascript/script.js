@@ -4,7 +4,6 @@ import { renderListFavorites } from "./favorite.js";
 const btnToday = document.getElementById("btNavToday");
 const btnRandom = document.getElementById("btNavRandom");
 const btnFavorites = document.getElementById("btNavFavorites");
-
 const factSection = document.getElementById("sectionFacts");
 const favoritesSection = document.getElementById("sectionFavorites");
 

@@ -1,10 +1,10 @@
 const factToday = "today";
-const displayFact = document.getElementById("displayData");
 let displayedFactData = null;
 
+const displayFact = document.getElementById("displayData");
+
 const dataFacts = async (fact) => {
-    let apiFacts = `https://uselessfacts.jsph.pl/api/v2/facts/${fact}`; 
-    
+    let apiFacts = `https://uselessfacts.jsph.pl/api/v2/facts/${fact}`;     
     fetch(apiFacts)
     .then(response => response.json())
     .then(data => {
@@ -13,8 +13,6 @@ const dataFacts = async (fact) => {
     }); 
 }
 
-
 dataFacts(factToday);
 
 export {dataFacts, displayedFactData}
-
