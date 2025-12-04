@@ -65,24 +65,25 @@ newCuriousFacts/
 
 | Tecnología | Convención |
 |------------|------------|
-| HTML y CSS | kebab-case (minúsculas con guión medio) |
-| Javascript | camelCase (la primera palabra en minúsculas y las siguientes con mayúscula inicial) |
+| HTML y CSS | **kebab-case** (minúsculas con guión medio) |
+| Javascript | **camelCase** (la primera palabra en minúsculas y las siguientes con mayúscula inicial) |
 | Git y Github | Conventional Commits y Gitflow para un historial de commits limpio y descriptivo. |
 | VS Code | Estructura de carpetas clasificadas y nombres de archivos en minúsculas, a excepción del README.md |
 
+
 *   **Control de Versiones:** Se aplicó la metodología **Gitflow**, trabajando en una rama `dev` principal y ramas de `feature` para cada tarea, con merges a `main`.
 
-*   **Pruebas unitarias:** Se usa **Vitest** para realizar los test unitarios. En este proyecto se aplica al archivo data.js testeando la función que obtiene información del API, las consideraciones son: que la respuesta sea de tipo Objeto y que devuelva la estructura específica del objeto (se agrega un objeto falso, un MOCK que simula la respuesta de la API). Durante las pruebas, me marcaba error en el DOM (document.getElementById), ya que no es un navegador web, *Vitest* no lo reconoce. Para resolver esto, hay que indicarle a Vitest que simule un entorno de navegador para que la variable *document* esté disponible cuando ejecute tus tests. Tuve que realizar los siguientes pasos:
+*   **Pruebas unitarias:** Se usa **Vitest** para realizar los test unitarios. En este proyecto se aplica al archivo data.js testeando la función que obtiene información del API, las consideraciones son: que la respuesta sea de tipo Objeto y que devuelva la estructura específica del objeto (se agrega un objeto falso, un MOCK que simula la respuesta de la API). Durante las pruebas, me marcaba error en el DOM (document.getElementById), ya que no es un navegador web, *Vitest* no lo reconoce. Para resolver esto, hay que indicarle a Vitest que simule un entorno de navegador para que  *document* esté disponible cuando ejecute tus tests. Tuve que realizar los siguientes pasos:
 
-1. Instalar el paquete JSDOM
+1. **Instalar el paquete JSDOM**
 
 ```bash
    npm install jsdom --save-dev
 ```
 
-2. Crear un archivo llamado *vite.config.js* en la raíz del proyecto, ya que no lo encontré en la carpeta node_modules.
+2. **Crear un archivo llamado vite.config.js** en la raíz del proyecto, ya que no lo encontré en la carpeta node_modules.
 
-3. Pegar este código en el archivo vite.config.js:
+3. **Pegar este código** en el archivo vite.config.js:
 
 ```javascript
 import { defineConfig } from 'vite';
@@ -93,10 +94,11 @@ export default defineConfig({
   },
 });
 ```
-4. El resultado, se obtuvo los test exitosos:
+
+4. **El resultado,** se obtuvo los test exitosos:
 
 <div align="center">
-  <img src="/img/test.png" width="200";">
+  <img src="/img/test.png" alt="imagen del resultado del test">
 </div>
 
 ## 🚀 Despliegue y Uso
