@@ -67,8 +67,9 @@ nav .container-nav{
     display: flex;
     justify-content: space-between;
     padding: 30px;
+    padding-bottom: 20px;
     flex-direction: column;
-    height: 35vh;
+    height: auto;
     border-radius: 25px;
 }
 
