@@ -11,8 +11,8 @@
     "url": "git+https://github.com/GeraldineSaco/curious-facts.git"
   },
   "license": "ISC",
-  "author": "Geraldine Saco",
-  "type": "commonjs",
+  "author": "",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "vitest"
