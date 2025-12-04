@@ -70,6 +70,7 @@ newCuriousFacts/
 | Git y Github | Conventional Commits y Gitflow para un historial de commits limpio y descriptivo. |
 | VS Code | Estructura de carpetas clasificadas y nombres de archivos en minúsculas, a excepción del README.md |
 
+
 *   **Control de Versiones:** Se aplicó la metodología **Gitflow**, trabajando en una rama `dev` principal y ramas de `feature` para cada tarea, con merges a `main`.
 
 *   **Pruebas unitarias:** Se usa **Vitest** para realizar los test unitarios. En este proyecto se aplica al archivo data.js testeando la función que obtiene información del API, las consideraciones son: que la respuesta sea de tipo Objeto y que devuelva la estructura específica del objeto (se agrega un objeto falso, un MOCK que simula la respuesta de la API). Durante las pruebas, me marcaba error en el DOM (document.getElementById), ya que no es un navegador web, *Vitest* no lo reconoce. Para resolver esto, hay que indicarle a Vitest que simule un entorno de navegador para que  *document* esté disponible cuando ejecute tus tests. Tuve que realizar los siguientes pasos:
@@ -97,7 +98,7 @@ export default defineConfig({
 4. **El resultado,** se obtuvo los test exitosos:
 
 <div align="center">
-  <img src="/img/test.png" width="200px">
+  <img src="/img/test.png" alt="imagen del resultado del test">
 </div>
 
 ## 🚀 Despliegue y Uso
